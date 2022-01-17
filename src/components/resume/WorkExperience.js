@@ -1,13 +1,14 @@
 import { Component } from "react";
 
 class WorkExperience extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
   //somefunctions
 
   render() {
     const { handleSubmit, work } = this.props;
+    console.log(work);
     const previousWork = work.map((obj, index) => (
       <div key={index}>
         <h3>Start Date: </h3> {obj.start}
